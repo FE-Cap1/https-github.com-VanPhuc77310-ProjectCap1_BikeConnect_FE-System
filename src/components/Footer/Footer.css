@@ -1,0 +1,128 @@
+/* Footer CSS */
+.footer {
+    background-color: #e6f0f8;
+    /* Màu nền xanh nhạt */
+    padding: 20px 0;
+    /* Giảm chiều cao footer */
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Chia thành 3 cột */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    /* Căn giữa các cột */
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3182ce;
+    text-align: center;
+    /* Căn giữa tiêu đề */
+}
+
+.footer-section p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #4a5568;
+    text-align: center;
+    /* Căn giữa nội dung */
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    /* Căn giữa form email */
+    margin-top: 10px;
+    gap: 10px;
+    /* Khoảng cách giữa input và button */
+}
+
+.email-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    /* Thu nhỏ chiều rộng input */
+}
+
+.btn-submit {
+    padding: 8px 16px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #2b6cb0;
+}
+
+.footer-section a {
+    color: #3182ce;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /* Căn giữa danh sách */
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+    /* Giảm khoảng cách giữa các mục */
+}
+
+.footer-section .flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Khoảng cách giữa các icon và text */
+}
+
+.footer-section .icon {
+    color: #3182ce;
+}
+
+.footer .text-center {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #4a5568;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .footer .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-section {
+        align-items: center;
+    }
+}
