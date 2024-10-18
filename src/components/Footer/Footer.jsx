@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container">
-                {/* Phần cột 1: Đăng ký email */}
+
                 <div className="footer-section">
                     <img src={logo} alt="Bike Connect Logo" className="logo" />
                     <p className="mt-4">Đăng kí email để có thể nhận thông tin về thuê xe từ chúng tôi</p>
@@ -17,7 +17,6 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Phần cột 2: Liên kết nhanh */}
                 <div className="footer-section">
                     <h3 className="font-bold">Liên kết nhanh</h3>
                     <ul className="mt-4 space-y-2">
@@ -29,7 +28,6 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                {/* Phần cột 3: Tương tác */}
                 <div className="footer-section">
                     <h3 className="font-bold">Tương tác</h3>
                     <ul className="mt-4 space-y-2">

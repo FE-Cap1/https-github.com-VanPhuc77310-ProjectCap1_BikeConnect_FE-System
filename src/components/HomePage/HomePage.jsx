@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from '../Header/HeaderNoLogin';
 import Footer from '../Footer/Footer';
-import { MapPin, Clock } from 'lucide-react';
+import SearchBar from '../SearchBar/SearchBar';
+import AboutBikeConnect from '../AboutBikeConnect/AboutBikeConnect';
 import './HomePage.css';
 import theme from '../../assets/images/images_homePage/v994_9045.png';
 import diadiem from '../../assets/images/images_homePage/v994_9046.png';
@@ -20,7 +21,6 @@ const HomePage = () => {
             isNew: true,
             image: "https://placehold.co/300x200"
         },
-        // Thêm 5 xe khác với dữ liệu tương tự
     ];
 
     const locations = [
@@ -50,32 +50,12 @@ const HomePage = () => {
             <Header />
             <div className="hero-section pt-24" style={{ backgroundImage: `url(${theme})` }}>
                 <div className="container py-16">
-                    <div className="hero-content mb-12">
-                        <h2 className="text-4xl font-bold mb-6">Cùng biết về Bike Connect</h2>
-                        <p className="text-lg">Chào mừng bạn đến với BikeConnect - nền tảng kết nối nhanh chóng giữa người cần thuê và người cho thuê xe đạp, xe máy.</p>
-                    </div>
-                    <div className="search-box grid grid-cols-3 gap-4">
-                        <div className="flex items-center space-x-4">
-                            <MapPin className="text-gray-400" />
-                            <div>
-                                <label className="block text-gray-600 text-sm">Địa điểm</label>
-                                <select className="select-box">
-                                    <option>Chọn địa điểm</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div className="flex items-center space-x-4">
-                            <Clock className="text-gray-400" />
-                            <div>
-                                <label className="block text-gray-600 text-sm">Thời gian</label>
-                                <select className="select-box">
-                                    <option>Chọn thời gian</option>
-                                </select>
-                            </div>
-                        </div>
-                        <button className="btn-search">Tìm xe</button>
-                    </div>
+                    <SearchBar />
                 </div>
+            </div>
+
+            <div className="container mx-auto py-16">
+                <AboutBikeConnect />
             </div>
 
             {/* How it works */}
@@ -125,6 +105,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
+
             <Footer />
         </div>
     );
